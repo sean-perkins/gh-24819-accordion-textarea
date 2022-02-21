@@ -1,0 +1,7 @@
+{
+  "name": "gh-24819-accordion-textarea",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
