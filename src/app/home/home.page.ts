@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  items = new Array(5).fill(0);
+
+  value = 0;
+
+  constructor() { }
 
 }

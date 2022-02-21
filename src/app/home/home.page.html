@@ -13,8 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let item of items; let i = index" [value]="value">
+      <ion-item slot="header">
+        <ion-label>Accordion {{ i }}</ion-label>
+      </ion-item>
+      <div slot="content">
+        <textarea></textarea>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>
